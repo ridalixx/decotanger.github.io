@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --color-neon1:#00EAD3;
+    --color-neon2:#FF449F;
+    --color-bg:rgb(14, 13, 13);
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body{
+   background-color: black;
+    color: var(--color-body);
+    font-family: var(--font-base),sans-serif;
+   
+    
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-neon1);
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+.logo{
+    color: var(--color-neon2);
+}
+.logo2{
+    color: var(--color-neon1);
+}
+.iconlogo{
+    font-size: 40px;
+    color: var(--color-neon1);
+}
+
+
+
+a:hover{
+    color: var(--color-neon1);
+}
+img{
+    width: 100%;
+}
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+   
+ 
+
+}
+
+.text-brand{
+    color:var(--color-neon2);
+}
+
+.bg-base{
+    background-color: var(--color-base);
+}
+/* NAVBAR*/
+.navbar{
+    background-color: var(--color-base);
+}
+.navbar .nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+.navbar .nav-link:hover{
+    color: var(--color-neon1);
+
+}
+.navbar.nav-link::after:hover{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-neon1);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition:all 0.4s ;
+}
+
+.navbar .nav-link.active{
+    color: var(--color-neon1);
+
+}
+
+.icon{
+    font-size: 25px;
+}
+
+/* NAVBAR*/
+
+
+/*BTN WORK*/
+.btn{
+   padding: 12px 28px;
+   font-weight: 700; 
+}
+
+.btn-brand{
+    background-color:var(--color-neon1);
+    border-color: var(--color-brand2);
+    color:white;
+}
+
+.btn.btn-brand:hover{
+    
+    background-color: var(--color-neon2);
+    transition: 0.5 ease;
+    
+}
+
+
+
+.link-costum{
+    font-weight: 700;
+    position: relative;
+    color:var(--color-brand2);
+    
+
+}
+.link-costum::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-neon1);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition:all 0.4s ;
+    
+
+}
+.link-costum:hover::after{
+    width: 100%;
+    color: var(--color-neon1);
+    
+}
+
+
+
+
+/*services*/
+.shadow-effect{
+    transition:all 0.5s ;
+}
+
+.shadow-effect:hover{
+    box-shadow: -6px 6px 0 0 var(--color-neon2);
+}
+.cardh{
+    color: white;
+}
+
+.iconbox{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: var(--color-neon2);
+    background-color: var(--color-neon1);
+    
+
+}
+.iconbox:hover{
+    color: var(--color-neon1);
+    background-color: var(--color-neon2);
+}
+
+/* //services-End*/
+
+/*card work */
+.card-custom  {
+    align-items: center;
+    background-size: cover;
+    background-color: var(--color-neon1);
+    opacity: 0.4;
+    
+    
+}
+.card-custom:hover{
+    box-shadow: -6px 6px 0 0 var(--color-neon1);
+    opacity: 1;
+    transition: 0.5s ease;
+    
+}
+
+
+
+
+
+
+
+@media (min-width:992px){
+   
+
+    .navbar{
+    min-height:100vh;
+    width: var(--sidbar-width);
+    background: linear-gradient(rgba(21, 41, 43, 0.9),rgba(0, 1, 1, 0.953)),url(../images/led6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar-brand img {
+   
+    height: 400px;
+    margin-bottom: -20vh;
+    
+    
+}
+#content-wrapper{
+    padding-left: var(--sidbar-width);
+  
+}
+
+#work img {
+    height: 300px;
+    
+}
+#img1{
+    width: 300px;
+}
+.ct{
+    text-align: center;
+    font-size: 50px;
+    
+}
+.me{
+    color: var(--color-neon1);
+}
+
+.iconct{
+    
+    text-align: center;
+}
+.btc{
+    background-color: var(--color-neon1);
+    color: var(--color-brand2);
+}
+
+
+
+    
+
+
+}
